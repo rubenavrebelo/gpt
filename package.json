@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/types": "^7.3.4",
     "@material-ui/core": "^3.9.2",
     "@material-ui/icons": "^3.0.2",
     "@svgr/cli": "^4.1.0",
+    "@svgr/webpack": "^4.1.0",
     "@types/classnames": "^2.2.7",
     "@types/jest": "^23.3.14",
     "@types/node": "^10.12.24",
@@ -13,10 +15,12 @@
     "@types/react-dom": "^16.8.0",
     "@types/react-scroll": "^1.5.4",
     "classnames": "^2.2.6",
+    "npx": "^10.2.0",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
     "react-scripts": "2.1.1",
     "react-scroll": "^1.7.10",
+    "resolve-from": "^4.0.0",
     "tslint": "^5.1.0"
   },
   "scripts": {
@@ -25,7 +29,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "tslint 'src/**/*.{ts,tsx}",
-    "tslint-check": "tslint-config-prettier-check ./tslint.json"
+    "tslint-check": "tslint-config-prettier-check ./tslint.json",
+    "svgr": "npx svgr --template ./template.js --icon --ext tsx -d src/components/svgs src/static/*.svg",
+    "webStart": "yarn svgr & yarn start"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -37,10 +43,12 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "@babel/template": "^7.2.2",
     "@svgr/core": "^4.1.0",
     "prettier": "^1.16.4",
     "prettier-tslint": "^0.4.2",
     "react-router": "^4.3.1",
+    "svg-react-loader": "^0.4.6",
     "tslint-config-prettier": "^1.18.0",
     "tslint-react": "^3.6.0",
     "typescript": "^3.3.3"
