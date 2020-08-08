@@ -8,7 +8,6 @@ import {
     Typography,
 } from '@material-ui/core';
 import classNames from 'classnames';
-import SvgConversation from '../main-liga/conversation';
 
 const styles = (theme: Theme) =>
     createStyles({

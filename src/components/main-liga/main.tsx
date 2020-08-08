@@ -10,8 +10,8 @@ import {
 } from '@material-ui/core';
 import classNames from 'classnames';
 import NavigationBar from '../navigation-bar/nav-bar';
-import SvgBackground from './background';
-import SvgRunningWild from './wild';
+import SvgBackground from '../svgs/src/static/Background';
+import SvgRunningWild from '../svgs/src/static/RunningWild';
 import Placeholder from './placeholder';
 import * as Scroll from 'react-scroll';
 

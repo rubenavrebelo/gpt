@@ -8,7 +8,7 @@ import {
     Typography,
 } from '@material-ui/core';
 import classNames from 'classnames';
-import SvgConversation from './conversation';
+import SvgConversation from '../svgs/src/static/Conversation';
 
 const styles = (theme: Theme) =>
     createStyles({
